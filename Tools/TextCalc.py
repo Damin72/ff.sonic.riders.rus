@@ -4,7 +4,7 @@ import os
 
 LEN_OF_HEXES_IN_FILE = 8
 
-first_file = r"F:\Translates\SonicRIDERS\LZSS\TextPack\Orig.bin"
+first_file = r"[Insert path to file with original text]\Orig.bin"
 
 def work_with_textfile(file):
     len_of_file = os.stat(file).st_size
@@ -33,7 +33,7 @@ def work_with_textfile(file):
     for i in range(len(list_of_hexes)):
         list_of_hexes[i] = list_of_hexes[i][::-1]
 
-    temp = r"F:\Translates\SonicRIDERS\LZSS\TextPack\complete.bin"
+    temp = r"[Insert path to output file]\complete.bin"
 
     with open(first_file, mode='rb') as first:
         with open(temp, mode='wb') as temp:
